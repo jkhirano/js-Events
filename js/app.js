@@ -102,6 +102,29 @@ var grimace = {
     hobbies: ['knitting', 'scrapbooking', 'mixed martial arts']
 };
 
+bio.addEventListener('click', showProfile);
+
+function showProfile(){
+    var nameElem = document.createElement('div');
+    nameElem.idName = 'profileName';
+    nameElem.innerHTML = 'Name: ' + grimace.name;
+    bio.appendChild(nameElem);
+
+    var signElem = document.createElement('div');
+    signElem.idName = 'profileSign';
+    signElem.innerHTML = 'Sign: ' + grimace.sign;
+    bio.appendChild(signElem);
+
+    var hobbyElem = document.createElement('div');
+    hobbyElem.idName = 'profileHobby';
+    hobbyElem.innerHTML = 'Hobbies: ' + grimace.hobbies;
+    bio.appendChild(hobbyElem);
+
+}
+
+// ^ Solution says: hobbyElem.innerHTML = 'Hobbies: ' + grimace.hobbies.toString('');
+// Whats the difference of having ".toString('')"?
+
 
 //8. Fortune Cookie
 /*Add an event listener to the `fortune` button that will generate a random message in the `showFortune` h3 element after clicking on the button*/
