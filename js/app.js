@@ -45,7 +45,7 @@ function bling(){
 var missing = "1 Big ol' beet";
 
 recipe.addEventListener('click', showIngredient);
-// ^ 1st - add event listening to add event
+// ^ 1st - add event listener to add event
 
 function showIngredient(){
     var listElem = document.createElement('li');
@@ -68,7 +68,15 @@ function showIngredient(){
 // Use this for the new image:
 // 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif'
 
+puggy.addEventListener('mouseover',showPuggy);
 
+function showPuggy(){
+    if (puggy.src === 'https://bit.ly/2RhOvm4'){
+    puggy.src = 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif';
+}else{
+    puggy.src = 'https://bit.ly/2RhOvm4';
+}
+}
 
 //6. DevLeague Lunch Wagon
 /*Add an event listener to the `menu` div element that will display and hide the dessert item after clicking on 'Today's Special'*/
