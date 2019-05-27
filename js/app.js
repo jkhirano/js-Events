@@ -44,7 +44,23 @@ function bling(){
 
 var missing = "1 Big ol' beet";
 
+recipe.addEventListener('click', showIngredient);
+// ^ 1st - add event listening to add event
 
+function showIngredient(){
+    var listElem = document.createElement('li');
+    listElem.ClassName = 'mix';
+    listElem.innerHTML = missing;
+    ingredient.appendChild(listElem);
+}
+// ^ 2nd - add a function to add what you want the outcome to be
+
+// 1st try (wrong):
+// var missing = "1 Big ol' beet";
+
+// function addEventListener(){
+//     recipe.style.display = missing;
+// }
 
 //5. Pug Life
 /*Add an event listener to the img element `puggy` that will rollover a new image after hovering over it.*/
