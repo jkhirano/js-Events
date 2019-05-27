@@ -18,7 +18,9 @@ function moreTrees(){
 
 The function will hide the contents in the pargraph with the id of `less`.*/
 
-
+function lessContent(){
+    less.style.display = 'none';
+}
 
 //3. Edward (エドワード)
 /*Create a function named `bling` that will change the text in the paragraph of `worm` after hovering over it. Use the style guide below.
